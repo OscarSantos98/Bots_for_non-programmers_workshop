@@ -1,0 +1,98 @@
+Inicio (WelcomeUser())
+- Hola, soy tu asistente virtual, ¿en qué te puedo ayudar?
+- Mi nombre es PizzaBot, encantado de apoyarte con tu pedido.
+- Hoy es un buen día para comer pizza. Tú solo di rana y yo salto.
+- Me ordenan tantas pizzas, que también me da hambre a mi. En fin, ¿cómo te puedo ayudar?
+
+Saludo
+# Intents
+- Hola
+- Que onda
+- Que tal
+- ¿Cómo estás?
+- 
+Diálogo
+- ¿Qué tal ${user.nombre}? ¿Cómo puedo ayudarte?
+- ¿En qué te puedo ayudar ${user.nombre}?
+- ¡Hola! Buenas tardes ${user.nombre}.
+
+
+Menu
+[Activity
+    Text = ¿En qué te puedo ayudar?
+    SuggestedActions = Ordenar una pizza | Rastrear pedido | Menú | Ayuda
+]
+
+[HeroCard
+    title = Pizzería 
+    subtitle = Blvd. Aeropuerto No. 104, Cerrito de Jerez, 37530 León, Gto.
+    text = ${WelcomeUser()}
+    image = https://picography.co/wp-content/uploads/2018/09/picography-pizza-margherita-cheese-tomato-jakub-kapusnak-small.jpg
+    buttons =  Ordenar comida | Menú | Rastrear pedido | Ayuda
+]
+
+Despedida
+# Intents
+- Muchas gracias
+- Adiós
+- Bye
+- Hasta luego
+- Nos vemos
+- Perfecto, gracias
+- Adiós
+- Ok
+- Va
+- adios
+- hasta pronto
+- ciao
+- Excelente, gracias
+Diálogo
+- Ha sido un placer ayudarte ${user.nombre}.
+- En menos de lo que canta un gallo llegará tu pizza.
+- Adiós.
+- Nos vemos ${user.nombre} :).
+- Hasta luego ${user.nombre}.
+
+Ayuda
+# Intents
+- Ayuda
+- No te entiendo
+- ¿Puedes ayudarme?
+- Necesito ayuda para ordenar
+- Me explicas por favor
+Diálogo
+- Puedes ordenarme cualquier comida del menú. Si tienes dudas o prefieres comunicarte directamente, llama al 01 800 01234567.
+
+Ordenar
+- Ordenar
+- ordenar comida
+- pedir comida
+- mi orden de comida
+- voy a solicitar
+- quiero ordenar una {@comida=pizza}
+- necesito una {@comida=pizza}
+- quisiera ordenar unas {@comida=papas}
+- voy a pedir una {@comida=hamburguesa}
+- dame unos {@comida=nachos} por favor
+- me encantaría pedir unas {@comida=papas} por favor
+- te voy a encargar una {@comida=hamburguesa}
+- quiero unos {@comida=nachos}
+- quisiera una {@comida=pizza}
+- me das {@comida=pizza} por favor
+Diálogos
+Tamaño de pizza
+- ¿De qué tamaño sería la pizza?
+
+Ingredientes
+¿Qué ingredientes llevaría su pizza?
+
+Dirección
+¿A qué dirección le llevamos su orden?
+
+Teléfono
+¿Algún teléfono con el que podamos comunicarnos para que el repartidor pueda entregarle su pedido?
+
+Extra
+- ¿Algo más en lo que le pueda ayudar?
+- ¿Le puedo ayudar con algo más?
+
