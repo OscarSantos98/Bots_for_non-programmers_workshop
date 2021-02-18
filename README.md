@@ -9,6 +9,9 @@ Responding with Cards
 * https://docs.microsoft.com/en-us/composer/how-to-send-cards
 * https://adaptivecards.io/
 
+Microsoft Azure
+* https://www.portal.azure.com
+
 LUIS portal
 * https://www.luis.ai/
 
